@@ -1,0 +1,89 @@
+/* a function to count players' shift in a loop @for */
+/* a fixed rule for @including anywhere else */
+.game__field, .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* a placeholder to use (mixin) without doubling in code*/
+.title {
+  padding: 0;
+}
+@media (min-width: 300px) {
+  .title {
+    background-color: rgba(245, 245, 132, 0.842);
+  }
+}
+@media (min-width: 480px) {
+  .title {
+    background-color: #9dda3c;
+  }
+}
+
+.game {
+  position: relative;
+  width: 300px;
+  border: 2px solid #000;
+}
+.game__field {
+  /* & instead of .game__field */
+  display: flex;
+  flex-wrap: wrap;
+}
+.game__cell {
+  width: 100px;
+  height: 100px;
+  /* using @mixin with width and height */
+  box-sizing: border-box;
+  border: 1px dashed #000;
+}
+.game__player {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  /* using another @mixin with border-radius */
+  background-color: #000;
+  /* game__player modificators */
+  /* a loop to create and count ($5) classes .game__player--row_1*/
+  /* a loop to create and count ($3) classes .game__player--row_1*/
+  /* a loop to create ($3) classes .game__player--color_#color */
+}
+.game__player--row_1 {
+  top: 10px;
+}
+.game__player--row_2 {
+  top: 110px;
+}
+.game__player--row_3 {
+  top: 210px;
+}
+.game__player--row_4 {
+  top: 310px;
+}
+.game__player--row_5 {
+  top: 410px;
+}
+.game__player--col_1 {
+  left: 10px;
+}
+.game__player--col_2 {
+  left: 110px;
+}
+.game__player--col_3 {
+  left: 210px;
+}
+.game__player--color_red {
+  background-color: #b81212;
+}
+.game__player--color_green {
+  background-color: #3be73b;
+}
+.game__player--color_blue {
+  background-color: #21748d;
+}
+
+/*# sourceMappingURL=style.css.map */
