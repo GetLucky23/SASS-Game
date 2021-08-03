@@ -1,0 +1,9 @@
+@use "sass:math";
+
+@import './utils/variables';
+@import './utils/functions';
+@import './utils/mixins';
+@import './utils/extends';
+
+@import './blocks/title.scss';
+@import './blocks/game.scss';

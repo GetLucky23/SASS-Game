@@ -1,0 +1,13 @@
+.title {
+  @extend %large-text;
+  padding: 0;
+
+  @media (min-width: 300px) {
+      background-color: rgba(245, 245, 132, 0.842);
+  }
+  
+  @media (min-width: 480px) {
+      background-color: rgb(157, 218, 60);
+  }
+}
+
